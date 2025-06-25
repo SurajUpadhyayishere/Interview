@@ -31,3 +31,54 @@ This project simulates a **virtual job interview** experience using a Large Lang
    ```bash
    git clone https://github.com/your-username/interview-llm-app.git
    cd interview-llm-app
+
+Install Dependencies
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Set Up Secrets
+Add your API key in .streamlit/secrets.toml:
+
+toml
+Copy
+Edit
+CHAT_API_KEYS = "your_openai_or_groq_api_key"
+Run the App
+
+bash
+Copy
+Edit
+streamlit run app.py
+📸 Demo
+(Insert screenshot or GIF of app here)
+
+📂 Folder Structure
+cpp
+Copy
+Edit
+interview-llm/
+├── app.py
+├── requirements.txt
+├── README.md
+├── .streamlit/
+│   └── secrets.toml
+└── venv/ (virtual environment)
+✅ Future Improvements
+Add voice-based responses (Speech-to-Text and Text-to-Speech)
+
+Save interview transcripts to PDF
+
+Integrate scoring analytics
+
+📄 License
+MIT License. See LICENSE for details.
+
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you want a version specifically tailored for **Groq API only** or with deployment instructions (like Streamlit Cloud 
