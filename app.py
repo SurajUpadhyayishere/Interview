@@ -42,10 +42,6 @@ if not st.session_state.setup_complete:
     st.session_state["experience"] = st.text_area(label="Experience",max_chars=150,value=st.session_state["experience"],placeholder="What's your experience")
     st.session_state["skills"] = st.text_area(label="Skills",max_chars=150,value=st.session_state["skills"],placeholder="What's your skills")
 
-    st.write(f"***Name*** :",st.session_state["name"])
-    st.write(f"***Experience*** :",st.session_state["experience"])
-    st.write(f"***Skills*** :",st.session_state["skills"])
-
     st.subheader("Level,Role,Company",divider="rainbow")
 
     if  "level" not in st.session_state:
@@ -74,8 +70,7 @@ if not st.session_state.setup_complete:
         ["Google","Amazon","Netflix","Facebook","Tesla","Twitter","Apple"]
     )
 
-    st.write(f"***Your Information***: {st.session_state['level']}  {st.session_state['position']} at {st.session_state['company']}." )
-
+    
     if st.button("Start Interview",on_click=complete_setup):
         st.write("Setup Completed  Start Interview")
 
